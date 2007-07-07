@@ -1,0 +1,2 @@
+Content of en.txt is taken from Latin dictionary that can be found
+on flreelang.net.

@@ -1,0 +1,3 @@
+certum,certain
+unis,one
+omnius,all
