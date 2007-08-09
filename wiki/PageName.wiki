@@ -1,0 +1,24 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+PyLatinam is Python module that deals with linguistic processing of Latin language words. This includes for time being declension and conjugation (morphology), with plans to upgrade code to support more processing, even on syntactic level.
+
+
+= Modules =
+
+These are modules in pyLatinam:
+  
+==Module *lexicon*==
+This module searches lexicon and dictionary files for entries. The search is preformed in very simple manner: text search line by 
+line. This is convenient for small amount of data, but inefficient for 
+extensive data. Class Lex will become depreciated in favour of LexFind.
+
+==Module *morph*==
+Parsing Latin nominals by using main Nom() class for nouns, adjectives, pronouns... This is the module on which most work so far has been done.
+
+==Module *syntax*==
+Syntax package is a stub only. In future it should contain code that parses whole texts written in Latin.
+
+==Module *tools*==
+Various helpers and wrappers that come in use during testing, debugging and showing possibilities and limitations of the code.
