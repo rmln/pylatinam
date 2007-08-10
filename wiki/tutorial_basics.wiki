@@ -7,7 +7,7 @@
  
 For now pyLatinam is distributed as "raw" code, and all that is needed is to unpack main directory from download file (rar compressed archive) into Python site-packages folder. On my computer that looks like this:
 
-C:\Python25\Lib\site-packages
+`C:\Python25\Lib\site-packages`
 
 You can also install the package by modifying .pth file inside site-packages directory. Simply create some plain text file and change extension to pth. Next you need to do is to enter full path to directory where you extracted pyLatinam code (no commas needed) and save edited file.
 
@@ -17,7 +17,7 @@ If you had Python running while doing any of above, you will need to restart it 
 
 Start Python IDLE (Python GUI) and load pylatinam.
 
->>>import latinam
+`>>>import latinam`
 
 Note: since the program is in the early stages, change of the package name is not final yet, sou if loading of pylatinam fails try with latinam instead.
 
@@ -25,8 +25,9 @@ If no error is displayed, that everything is all right.
 
 Let us see what you can use in this package. Type:
 
->>> dir(latinam)
-['ADJ', 'ADV', 'Adj', 'Adjf', 'Adv', 'C', 'Conj', 'I', 'Intj', 'N', 'Nom', 'P', 'Pron', 'V', 'Ver', '__author__', '__builtins__', '__doc__', '__file__', '__mail__', '__name__', '__path__', '__version__', 'lexicon', 'locals', 'ltexcept', 'morph', 'sintax', 'tools']
+`>>> dir(latinam)`
+
+`['ADJ', 'ADV', 'Adj', 'Adjf', 'Adv', 'C', 'Conj', 'I', 'Intj', 'N', 'Nom', 'P', 'Pron', 'V', 'Ver', '__author__', '__builtins__', '__doc__', '__file__', '__mail__', '__name__', '__path__', '__version__', 'lexicon', 'locals', 'ltexcept', 'morph', 'sintax', 'tools']`
 
 We will continue by using Nom class.
 
@@ -36,63 +37,77 @@ We will continue by using Nom class.
 
 Let us create variable ’noun’ that will have declension of the noun mare, -is.
 
->>> nom = latinam.Nom
->>> noun=nom("mare")
+`>>> nom = latinam.Nom`
+
+`>>> noun=nom("mare")`
 
 Word "mare" should be successfully looked up.
 
 To display first case singular, type:
 
->>> noun[0]
-'mare'
+`>>> noun[0]`
+
+`'mare'`
 
 Cases are labeled from 0-5 for singular and 6-10 for plural.
 
 To get nicely print table, type:
 
- >>> noun.show()
+ `>>> noun.show()`
 
- NOUN DECLENSION 
- ----------------------------------------------------------------------
- Noun:            mare, -is, n
- Translation(s):  mare maris - sea
+ `NOUN DECLENSION `
+ `----------------------------------------------------------------------`
 
- Nom. s. mare                 Nom. p. maria
- Gen. s. maris                Gen. p. marium
- Dat. s. mari                 Dat. p. maribus
- Acc. s. mare                 Acc. p. maria
- Voc. s. mare                 Voc. p. maria
- Abl. s. mari                 Abl. p. maribus
+ `Noun:            mare, -is, n`
+
+ `Translation(s):  mare maris - sea`
+
+ `Nom. s. mare                 Nom. p. maria`
+
+ `Gen. s. maris                Gen. p. marium`
+
+ `Dat. s. mari                 Dat. p. maribus`
+
+ `Acc. s. mare                 Acc. p. maria`
+
+ `Voc. s. mare                 Voc. p. maria`
+
+ `Abl. s. mari                 Abl. p. maribus`
 
 All cases as list:
 
->>> noun.casii
-['mare', 'maris', 'mari', 'mare', 'mare', 'mari', 'maria', 'marium', 'maribus', 'maria', 'maria', 'maribus']
+`>>> noun.casii`
+
+`['mare', 'maris', 'mari', 'mare', 'mare', 'mari', 'maria', 'marium', 'maribus', 'maria', 'maria', 'maribus']`
 
 To identify inflexion:
 
->>> noun.ident("maribus")
-Dat. p. 8
-Abl. p. 11
+`>>> noun.ident("maribus")`
+
+`Dat. p. 8`
+
+`Abl. p. 11`
 
 *Declension: Adjectives*
 
 Make instance of Adj class:
 
->>> adj = latinam.Adj
+`>>> adj = latinam.Adj`
 
 Make declension:
 
->>> adjective = adj("clarus")
+`>>> adjective = adj("clarus")`
 
-Note: By default gender is set to masculinum and to get all forms of an adjective, use Adjf() class so you do not have supply gender="mfn" every time.
+Note: By default gender is set to masculinum and to get all forms of an adjective, use Adjf() class sou you do not have su supply gender="mfn" every time.
 
 Forms:
 
->>> adjective.casii
-[['clarus', 'clari', 'claro', 'clarum', 'clare', 'claro', 'clari', 'clarorum', 'claris', 'claros', 'clari', 'claris'], ['clarer', 'clareri', 'clarero', 'clarerum', 'clarere', 'clarero', 'clareri', 'clarerorum', 'clareris', 'clareros', 'clareri', 'clareris']]
+`>>> adjective.casii`
 
->>> adjective.grad
+`[['clarus', 'clari', 'claro', 'clarum', 'clare', 'claro', 'clari', 'clarorum', 'claris', 'claros', 'clari', 'claris'], ['clarer', 'clareri', 'clarero', 'clarerum', 'clarere', 'clarero', 'clareri', 'clarerorum', 'clareris', 'clareros', 'clareri', 'clareris']]`
+`
+
+`>>> adjective.grad`
 
 Should display gradation.
 
@@ -105,11 +120,15 @@ specify quite a lot details.
 
 The first way is built-in:
 
-a = Pron()
->>> a["per,2sg,2"]
-'tibi'
->>> a["per,3sg,2,f"]
-'iis|eis'
+`a = Pron()`
+
+`>>> a["per,2sg,2"]`
+
+`'tibi'
+
+`>>> a["per,3sg,2,f"]`
+
+`'iis|eis'`
 
 Arguments for __getitem__ method must be in correct order
 specified as:
@@ -142,6 +161,13 @@ The second way is attribute:
 When you create instance, you have at your disposal dictionaries
 with genders and classes of pronouns. Names of dictionaries are
 keys of __pron__ dictionary.
+
+
+
+
+
+
+
 
 
 
