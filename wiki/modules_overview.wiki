@@ -1,4 +1,5 @@
 #summary pyLatinam Modules Overview.
+#labels Featured
 
 = Introduction =
 
@@ -22,4 +23,3 @@ Syntax package is a stub only. In future it should contain code that parses whol
 
 ==Module *tools*==
 Various helpers and wrappers that come in use during testing, debugging and showing possibilities and limitations of the code.
-
