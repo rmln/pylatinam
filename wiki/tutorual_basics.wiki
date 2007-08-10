@@ -1,4 +1,5 @@
 #summary Tutorial - Getting first results.
+#labels Featured,Phase-Deploy
 
 ==Tutorial: Getting results==
  
@@ -141,7 +142,6 @@ The second way is attribute:
 When you create instance, you have at your disposal dictionaries
 with genders and classes of pronouns. Names of dictionaries are
 keys of __pron__ dictionary.
-
 
 
 
