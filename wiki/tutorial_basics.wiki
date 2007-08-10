@@ -85,7 +85,7 @@ Make declension:
 
 >>> adjective = adj("clarus")
 
-Note: By default gender is set to masculinum and to get all forms of an adjective, use Adjf() class sou you do not have su supply gender="mfn" every time.
+Note: By default gender is set to masculinum and to get all forms of an adjective, use Adjf() class so you do not have supply gender="mfn" every time.
 
 Forms:
 
@@ -142,7 +142,6 @@ The second way is attribute:
 When you create instance, you have at your disposal dictionaries
 with genders and classes of pronouns. Names of dictionaries are
 keys of __pron__ dictionary.
-
 
 
 
