@@ -1,0 +1,45 @@
+#summary Lexicon data and file types.
+#labels Featured
+
+
+=Lexicon data and file types=
+
+Lexicon data is plan text.
+
+==Types of files==
+
+Definition files are located in latinam/lexicon folder. Each definition file has prefix latin_ followed by POS ID (part of speech identifier), for example latin_n.txt for nouns or latin_v.txt for verbs. POS determines format of entered words.
+
+For nouns: tempus,oris,n
+For verbs: condo,condere,3,condidi
+For prepositions: iuxta,3
+
+Translation files are stored into separate directories with prefix latin_ plus language id (latin_en, latin_sr), also located inside lexicon folder. Patter for naming files is the same as for definition files and difference is in content: each file contains one comma delimited word which serves as id, followed by translation.
+
+For example:
+
+`omnius,all`
+
+(comma delimited adjective is linked and searched in latin_adj.txt and vice versa)
+
+`finitimus,adjacent,adjoin`
+
+(first word is id, everything else is translation)
+
+=Searching and processing=
+
+When word is entered, program will find it in definition file and look up translation in translation files. If word is not found in definition file, error will occur, which does not apply for translation since translation is irrelevant for processing.
+
+To the error user has two options:
+
+* Update appropriate definition file
+
+or
+
+* Initiate class with nolex=True switch, and supply needed information manually
+
+Here are examples for second option:
+
+`n = Nom("puella,ae,f", nolex=True)`
+
+`v = Ver("laudo,laudare,1", nolex=True)`
