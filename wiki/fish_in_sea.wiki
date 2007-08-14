@@ -1,22 +1,22 @@
 #summary Intro: Language is evasive
-#labels Featured,Phase-Design
+#labels Featured
 
 = Fish in a sea =
 
-Someone once said that language rules are like a fish swimming in a sea; the moment you think it will take same course, it swiftly changes the direction. Same thing is with language - there are rules, but exceptions are numerous.
+Someone once said that language rules are like a fish swimming in a sea; the moment you think it will take same course, it swiftly changes the direction. The same is with language - there are rules, but exceptions are numerous.
 
-This evasiveness of language makes any programming dealing with grammar rules and processing particularly challenging. It is necessary to know rules of both natural language (which in y way, is being described) and formal language (which is used for description and production). It is necessary that things start slowly otherwise whole project will resemble poorly written grammar that is of no use. Also, tricky balancing between readability and easiness of upgrade/refactoring of the program code on one side and performance issues are not to be underestimated.
+This evasiveness of language makes any programming dealing with grammar rules and processing particularly challenging. It is necessary to know rules of both natural language (which in a way, is being described) and formal language (which is used for description and production). It is necessary that things start slowly otherwise whole project will resemble poorly written grammar that is of no use. Also, tricky balancing between readability and easiness of upgrade/refactoring of the program code on one side and performance issues is not to be underestimated.
 
 = Why Latin? =
 
 Why should anyone bother to make such a dull program that makes words of a language that so is rarely used and - dead? That is not spoken, and, to most of people completely useless? Why Latin?
 
-Being a dead language, Latin gave me an impression of wholeness and completeness, which does is not the case with live languages, which change all the time. The impression gave me confidence that this project is possible, because I managed to see borders, at least in the domain of linguistics.
+Being a dead language, Latin gave me an impression of wholeness and completeness, which was not the case with living languages, which change constantly. The impression gave me confidence that this project is possible, because I managed to see borders, at least in the domain of linguistics.
 
-Second reason has to do with characteristics of language I wanted to choose. I wanted language with strong inflexion, because that could make things much easier when working with syntax. Serbian, my vernacular was not chosen because only people speaking might have chance to work on it. English, language spoken by many, was not suitably because of its weak inflexion. I had two options - Latin or Italian, and as you can see, I chose Latin.
+Second reason has to do with characteristics of language I planned to choose. I wanted language with strong inflexion, because that could make things much easier when working with syntax. Serbian, my vernacular was not chosen because only people speaking it might have chance to work on it. English, language spoken by many, was not suitable because of its weak inflexion. I had two options - Latin or Italian, and as you can see, I chose Latin.
 
-Working with such an elaborate grammar will make things easier in future, when this project might become a stem for something much more advanced.
+Working with such an elaborate grammar will make things easier in future, when this project might become a stem for something more advanced.
 
 = Enthusiasm and fun =
 
-You might want to add to the above that this lines, as well as code you can find in download section, are written by author that is no expert in Latin language. He is no experienced programmer either, but enthusiast that has been learning many things about language and programming, and - having a lot of fun.
+You might want to add to the above that these lines, as well as files with code you can find in download section, are written by author who is no expert in Latin language. He is no experienced programmer either, but enthusiast that has been learning many things about language and programming, and - having a lot of fun.
