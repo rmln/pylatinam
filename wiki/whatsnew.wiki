@@ -1,0 +1,12 @@
+#summary What is new in current version
+
+=What's new=
+
+*0.0.5.2.5*
+
+ * 'morph.adjective' - added support for cooperation (ver 0.5.1)
+ * 'morph.preposition' - Prep() now does not require noun (ver 0.5)
+ * Removed most of the nonfunctional code
+ * Added readme.txt with basic info, including note about New BSD Licence
+ * Changed my alias "miller" to my alias "mr.marvin", to make it consistent with info on The Python Package Index
+ * Added __url__='http://pylatinam.googlecode.com/' in most modules
