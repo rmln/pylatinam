@@ -1,4 +1,5 @@
 #summary What is new in current version
+#labels Featured
 
 =What's new=
 
