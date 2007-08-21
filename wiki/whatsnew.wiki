@@ -5,7 +5,7 @@
 
 *0.0.5.2.5*
 
- * 'morph.adjective' - added support for cooperation (ver 0.5.1)
+ * 'morph.adjective' - added support for gradation (ver 0.5.1)
  * 'morph.preposition' - Prep() now does not require noun (ver 0.5)
  * Removed most of the nonfunctional code
  * Added readme.txt with basic info, including note about New BSD Licence
