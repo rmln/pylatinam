@@ -3,6 +3,11 @@
 
 =What's new=
 
+*0.0.5.2.5a*
+
+ * fixed: 'out.py' in HTML output used wrong order of cases
+ * minor changes in html/txt template 
+
 *0.0.5.2.5*
 
  * 'morph.adjective' - added support for gradation (ver 0.5.1)
