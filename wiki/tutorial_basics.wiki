@@ -49,7 +49,7 @@ To display first case singular, type:
 
 `'mare'`
 
-Cases are labeled from 0-5 for singular and 6-10 for plural.
+Cases are labeled from 0-5 for singular and 6-11 for plural.
 
 To get nicely print table, type:
 
@@ -109,14 +109,14 @@ Forms:
 
 `>>> adjective.grad`
 
-Should display gradation.
+...should display gradation.
 
 *Declension: Pronouns*
 
 (for now copy/paste from __doc__)
 
 You can get pronouns in two ways, but in both you have to
-specify quite a lot details.
+specify quite a lot of details.
 
 The first way is built-in:
 
@@ -161,7 +161,6 @@ The second way is attribute:
 When you create instance, you have at your disposal dictionaries
 with genders and classes of pronouns. Names of dictionaries are
 keys of __pron__ dictionary.
-
 
 
 
