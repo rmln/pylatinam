@@ -1,5 +1,4 @@
 #summary Intro: Language is evasive
-#labels Featured
 
 = Fish in a sea =
 
