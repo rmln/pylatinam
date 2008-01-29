@@ -1,4 +1,0 @@
-"""Lexicon - pyLatinam
-"""
-
-#import lexicon

@@ -1,3 +1,0 @@
-et,and
-sine,without
-quod,what
