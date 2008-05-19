@@ -5,7 +5,7 @@
 
 *0.1.1*
 
- * Version of pylatinam is now reduced to 0.1.1 and all counting of future version from now on continues from this number.
+ * Version of pylatinam is now reduced to 0.1.1 and all counting of future version from now on continues from this number. Inside the project almost all modules now have version 0.2.x.
  * Name of the package in namspace is now 'pylatinam' instead od 'latinam'.
  * Names of Latin tenses are changed according to Wikipedia.
  * Added: xml output.
