@@ -5,11 +5,11 @@
  
 ===Installation===
  
-For now pyLatinam is distributed as "raw" code, and all that is needed is to unpack main directory from download file (rar compressed archive) into Python site-packages folder. On my computer that looks like this:
+For now pyLatinam is distributed as "raw" code, and all that is needed is to unpack main directory from download file (rar or zip compressed archive) into Python site-packages folder. On my computer that looks like this:
 
 `C:\Python25\Lib\site-packages`
 
-You can also install the package by modifying .pth file inside site-packages directory. Simply create some plain text file and change extension to pth. Next you need to do is to enter full path to directory where you extracted pyLatinam code (no commas needed) and save edited file.
+You can also install the package by modifying .pth file inside site-packages directory. Simply create a plain text file and change extension to pth. Next you need to do is to enter full path to the directory where you extracted pyLatinam code (no commas needed) and save edited file.
 
 If you had Python running while doing any of above, you will need to restart it in order to load your new package.
 
@@ -17,17 +17,15 @@ If you had Python running while doing any of above, you will need to restart it 
 
 Start Python IDLE (Python GUI) and load pylatinam.
 
-`>>>import latinam`
+`>>>import pylatinam`
 
-Note: since the program is in the early stages, change of the package name is not final yet: if loading of pylatinam fails try with latinam instead.
-
-If no error is displayed, that everything is all right.
+If no error is displayed everything should be OK.
 
 Let us see what you can use in this package. Type:
 
-`>>> dir(latinam)`
+`>>> dir(pylatinam)`
 
-`['ADJ', 'ADV', 'Adj', 'Adjf', 'Adv', 'C', 'Conj', 'I', 'Intj', 'N', 'Nom', 'P', 'Pron', 'V', 'Ver', '__author__', '__builtins__', '__doc__', '__file__', '__mail__', '__name__', '__path__', '__version__', 'lexicon', 'locals', 'ltexcept', 'morph', 'sintax', 'tools']`
+`['ADJ', 'ADV', 'Adj', 'Adjf', 'Adv', 'C', 'Conj', 'I', 'Intj', 'N', 'Nom', 'P', 'Pron', 'V', 'Ver', '__author__', '__builtins__', '__doc__', '__file__', '__mail__', '__name__', '__path__', '__url__', '__version__', 'lexicon', 'locals', 'ltexcept', 'morph', 'out', 'syntax', 'tools']`
 
 We will continue by using Nom class.
 
@@ -37,7 +35,7 @@ We will continue by using Nom class.
 
 Let us create variable ’noun’ that will have declension of the noun mare, -is.
 
-`>>> nom = latinam.Nom`
+`>>> nom = pylatinam.Nom`
 
 `>>> noun=nom("mare")`
 
@@ -92,7 +90,7 @@ To identify inflexion:
 
 Make instance of Adj class:
 
-`>>> adj = latinam.Adj`
+`>>> adj = pylatinam.Adj`
 
 Make declension:
 
@@ -161,8 +159,6 @@ The second way is attribute:
 When you create instance, you have at your disposal dictionaries
 with genders and classes of pronouns. Names of dictionaries are
 keys of __pron__ dictionary.
-
-
 
 
 
