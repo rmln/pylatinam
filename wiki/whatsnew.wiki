@@ -3,6 +3,19 @@
 
 =What's new=
 
+*0.1.1*
+
+ * Version of pylatinam is now reduced to 0.1.1 and all counting of future version from now on continues from this number.
+ * Name of the package in namspace is now 'pylatinam' instead od 'latinam'.
+ * Names of Latin tenses are changed according to Wikipedia.
+ * Added: xml output.
+ * Added: localhost service (html).
+ * Removed: many lines are removed, including syntax module.
+ * More pythonian code :)
+ * Improved documentation.
+ * This version is done on Linux, hence the first line in some files. Please note that this code is filly supported on Windows platform.
+ 
+
 *0.0.5.2.5a*
 
  * fixed: 'out.py' in HTML output used wrong order of cases
