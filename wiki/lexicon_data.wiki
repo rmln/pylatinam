@@ -45,3 +45,11 @@ Here are examples for second option:
 `n = Nom("puella,ae,f", nolex=True)`
 
 `v = Ver("laudo,laudare,1", nolex=True)`
+
+== Elusive 'e' ==
+
+To state that noun change has "elusive e", supply full and valid genitive.
+    
+    Example: _liber,libri_ instead of just _liber,i_ 
+
+If full genitive is not provided, the program will not create proper noun forms.
