@@ -9,19 +9,25 @@ For now pyLatinam is distributed as "raw" code, and all that is needed is to unp
 
 `C:\Python25\Lib\site-packages`
 
-You can also install the package by modifying .pth file inside site-packages directory. Simply create a plain text file and change extension to pth. Next you need to do is to enter full path to the directory where you extracted pyLatinam code (no commas needed) and save edited file.
+You can also install the package by modifying .pth file inside site-packages directory. Simply create a plain text file and change extension to pth. Next you need to do is to enter full path to the directory where you extracted pyLatinam code (no commas needed) and save edited file. The same installation procedure applies to Linux systems once when you find Python path on your computer.
 
 If you had Python running while doing any of above, you will need to restart it in order to load your new package.
 
 ===Creating instance===
 
-Start Python IDLE (Python GUI) and load pylatinam. In Lynux console just enter `python` and then import the project.
+On Windows start Python IDLE (Python GUI) and load pylatinam. In Lynux console just enter `python` and then import the project. You can use command interface in Windows also. To do this, go to Start > Run. Enter command and the console window will pop up. Now navigate to your Python folder; if you are running 2.5 version enter:
+
+`cd c:\python25`
+
+Number "25" stands for Python version installed. Once you are in `C:\Python25>`, enter `python` and hit Enter to start Python in console mode.
+
+From this point continue with the package:
 
 `>>>import pylatinam`
 
 If no error is displayed everything should be OK.
 
-Let us see what you can use in this package. Type:
+You can easily see some of the program potentials by typing:
 
 `>>> dir(pylatinam)`
 
@@ -159,8 +165,6 @@ The second way is attribute:
 When you create instance, you have at your disposal dictionaries
 with genders and classes of pronouns. Names of dictionaries are
 keys of __pron__ dictionary.
-
-
 
 
 
