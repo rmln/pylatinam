@@ -29,4 +29,4 @@ This folder contains files for local server, which is used to browse the outputs
 
 ==Folder *vardoc*==
 
-Various files and samples created for debugging/refactoring/documenting the project. The content of the folder is not relevant for the execution.
+Various files and samples created for debugging/refactoring/documenting the project. The content of the folder is not relevant for the running of the program.
