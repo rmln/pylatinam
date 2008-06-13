@@ -24,7 +24,7 @@ Comma delimited adjective is linked and searched in latin_adj.txt and vice versa
 
 First word is id, everything else is translation: `finitimus,adjacent,adjoin`
 
-=Searching and processing=
+==Searching and processing==
 
 When word is entered, program will find it in definition file and look up translation in translation files. If word is not found in definition file, error will occur, which does not apply for translation since translation is irrelevant for processing.
 
