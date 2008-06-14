@@ -6,14 +6,15 @@
 *0.1.1*
 
  * Version of pylatinam is now reduced to 0.1.1 and all counting of future version from now on continues from this number. Inside the project almost all modules now have version 0.2.x.
- * Name of the package in namspace is now 'pylatinam' instead od 'latinam'.
+ * Name of the package in namespace is now 'pylatinam' instead od 'latinam'.
  * Names of Latin tenses are changed according to Wikipedia.
  * Added: xml output.
  * Added: localhost service (html).
  * Removed: many lines are removed, including syntax module.
- * More pythonian code :)
+ * More Pythonian code :)
  * Improved documentation.
  * This version is done on Linux, hence the first line in some files. Please note that this code is filly supported on Windows platform.
+ * License text is added, with my full name included. In the same time all depreciated releases were deleted.
  
 
 *0.0.5.2.5a*
