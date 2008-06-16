@@ -163,8 +163,6 @@ Note: You can provide arguments as iterable.
 
 The second way is attribute:
 
-When you create instance, you have at your disposal dictionaries
+When you create an instance, you have at your disposal dictionaries
 with genders and classes of pronouns. Names of dictionaries are
 keys of __pron__ dictionary.
-
-
