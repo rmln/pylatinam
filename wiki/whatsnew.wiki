@@ -13,7 +13,7 @@
  * Removed: many lines are removed, including syntax module.
  * More Pythonian code :)
  * Improved documentation.
- * This version is done on Linux, hence the first line in some files. Please note that this code is filly supported on Windows platform.
+ * This version is done on Linux, hence the first line in some files. Please note that this code is fully supported on Windows platform.
  * License text is added, with my full name included. In the same time all depreciated releases were deleted.
  
 
