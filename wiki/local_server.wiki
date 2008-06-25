@@ -1,0 +1,30 @@
+#summary How to see pyLatinam outputs in a web browser.
+
+= Local server =
+
+Users not feeling comfortable working with the console can see and enter words by using web browser. This is done like in any other web page, with the exception that pages are created on your computer rather that on a remote server.
+
+
+= Instructions =
+
+ * Install pyLatinam as instructed in the Installation notes, and then navigate to `pylatinam` folder. 
+ * Locate `pylatserver.py` file.
+ * If you wish to use default settings, double click on the `pylatserver.py`. If all goes fine, you will see the message: `No port set by the user, using default values. Port 8088 open for access. Please point your browser to http://localhost:8088.`
+ * Open your browser and enter this address: http://localhost:8088. You should see the welcome message.
+
+== Notes ==
+
+*Firewall*
+
+You may have to set a rule in your firewall to allow Python to act as a server.
+
+*Port number*
+
+It is possible to change the default port. You can do it by manually editing pylatserver.py, or by starting server in command line while providing port number. For example, to start the server on port 5000:
+
+`python pylatserver.py 5000`
+
+== Warning! ==
+
+ * This simple server is intended to be used on personal computer *only*. It is not secure to install it on the remote web server.
+ * By starting a web server on your PC, you may have opened access to anyone on the Internet who knows your IP. Depending on how you set your firewall rules, the pylatinam web service may be available on http://your_ip:8088. Take care of your privacy, and do not forget to shut down the server.
