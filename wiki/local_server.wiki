@@ -8,7 +8,7 @@ Users not feeling comfortable working with the console can see and enter words b
 
 = Instructions =
 
- * Install pyLatinam as instructed in the Installation notes, and then navigate to `pylatinam` folder. 
+ * Install pyLatinam as instructed in the [tutorial_basics  Installation notes], and then navigate to `pylatinam` folder. 
  * Locate `pylatserver.py` file.
  * If you wish to use default settings, double click on the `pylatserver.py`. If all goes fine, you will see the message: `No port set by the user, using default values. Port 8088 open for access. Please point your browser to http://localhost:8088.`
  * Open your browser and enter this address: http://localhost:8088. You should see the welcome message.
@@ -21,7 +21,7 @@ You may have to set a rule in your firewall to allow Python to act as a server.
 
 *Port number*
 
-It is possible to change the default port. You can do it by manually editing pylatserver.py (open it in any plain text editor, such as Notepad), or by starting server in command line while providing port number. For example, to start the server on port 5000:
+It is possible to change the default port. You can do it by manually editing pylatserver.py, or by starting server in command line while providing port number. For example, to start the server on port 5000:
 
 `python pylatserver.py 5000`
 
