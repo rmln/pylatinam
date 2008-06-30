@@ -21,7 +21,7 @@ You may have to set a rule in your firewall to allow Python to act as a server.
 
 *Port number*
 
-It is possible to change the default port. You can do it by manually editing pylatserver.py, or by starting server in command line while providing port number. For example, to start the server on port 5000:
+It is possible to change the default port. You can do it by manually editing pylatserver.py (open it in any plain text editor, such as Notepad), or by starting server in command line while providing port number. For example, to start the server on port 5000:
 
 `python pylatserver.py 5000`
 
