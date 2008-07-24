@@ -3,7 +3,7 @@
 
 = Local server =
 
-Users not feeling comfortable working with the console can see and enter words by using web browser. This is done like in any other web page, with the exception that pages are created on your computer rather that on a remote server.
+Users not feeling comfortable working with the console can see and enter words by using web browser. This is done like in any other web page, with the exception that pages are created on your computer rather than on a remote server.
 
 
 = Instructions =
