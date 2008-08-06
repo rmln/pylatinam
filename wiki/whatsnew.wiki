@@ -3,6 +3,17 @@
 
 =What's new=
 
+*0.1.8*
+
+ * Improved declension of nouns
+ * Rewritten code in Lex
+ * Added makefiles.py that makes HTML, XML and TXT files with outputs using all items in lexicon files
+ * Minor code improvement
+ * Online version has its own CGI scripts that are not part of this distribution; available on [http://pylatinam.proprevod.com/interactive/ pyLatinam Interactive Pages]
+ * Other code improvements
+ * Documentation updated
+
+
 *0.1.1*
 
  * Version of pylatinam is now reduced to 0.1.1 and all counting of future version from now on continues from this number. Inside the project almost all modules now have version 0.2.x.
