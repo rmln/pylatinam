@@ -1,5 +1,5 @@
 #summary How to see pyLatinam outputs in a web browser.
-#labels Featured,Phase-Deploy
+#labels Deprecated,Phase-Deploy
 
 = Local server =
 
