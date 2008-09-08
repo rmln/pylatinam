@@ -3,6 +3,8 @@
 
 =What's new=
 
+Changes that will be available in upcoming release can be found [http://pylatinam.proprevod.com/wiki/ here].
+
 *0.1.8*
 
  * Improved declension of nouns;
