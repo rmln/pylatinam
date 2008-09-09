@@ -41,11 +41,13 @@ In order to speed up the search, all words that start with the same letter are i
 Data for derivation:
 
 `/lexicon/n/latin_n_LETTER.txt`
+
 `/lexicon/v/latin_v_LETTER.txt`
 
 Translation entries: 
 
 `/lexicon/n_translate/latin_n_LETTER.txt`
+
 `/lexicon/v_translate/latin_v_LETTER.txt`
 
 Where LETTER is the first letter of the searched word.
