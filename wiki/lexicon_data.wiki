@@ -4,9 +4,19 @@
 
 =Lexicon data and file types=
 
-Lexicon data is plan text.
+Lexicon data is plain text.
+
+From version 0.1.9 pyLatinam introduces parsed dictionary entries from William Whitaker's [http://users.erols.com/whitaker/words.htm WORDS]. The types of words are introduced when the type becomes available in pyLatinam code, since meanings are not main interest; they are more like a "supplement" for visitors of Web Version.
+
+More important, WORDS is used for getting the data needed for the derivation. Now, there are two sources of information for processing:
+
+  * Internal lexicon (manually selected entries used for testing; it is in /lexicon/lat)
+  * WORDS (full-scale searchable index of Latin words; it is in /lexicon/words)
+
 
 ==Types of files==
+
+===Internal===
 
 Definition files are located in latinam/lexicon folder. Each definition file has prefix `latin_` followed by POS ID (part of speech identifier). For example: `latin_n.txt` for nouns or `latin_v.txt` for verbs. POS determines format of entered words.
 
@@ -24,28 +34,34 @@ Comma delimited adjective is linked and searched in latin_adj.txt and vice versa
 
 First word is id, everything else is translation: `finitimus,adjacent,adjoin`
 
+===Parsed WORDS===
+
+In order to speed up the search, all words that start with the same letter are in the same file. 
+
+Data for derivation:
+
+`/lexicon/n/latin_n_LETTER.txt`
+`/lexicon/v/latin_v_LETTER.txt`
+
+Translation entries: 
+
+`/lexicon/n_translate/latin_n_LETTER.txt`
+`/lexicon/v_translate/latin_v_LETTER.txt`
+
+Where LETTER is the first letter of the searched word.
+
 ==Searching and processing==
 
-When word is entered, program will find it in definition file and look up translation in translation files. If word is not found in definition file, error will occur, which does not apply for translation since translation is irrelevant for processing.
+Search for the noun "mare" in internal lexicon: 
 
-To avoid the error two options are possible:
+`Nom("mare", mode="simple")`
 
-* Update appropriate definition file by entering required word as defined by lexicon format.
+Search for the noun "lex" in WORDS:
 
-Or:
+`Nom("lex", mode="words")`
 
-* Initiate class with `nolex=True` switch, and supply needed information manually.
+Do *not* search for the word, but process is as it it entered:
 
-Here are examples for the second option:
+`Nom("mare,is,n", nolex="True")`
 
-`n = Nom("puella,ae,f", nolex=True)`
-
-`v = Ver("laudo,laudare,1", nolex=True)`
-
-== Elusive 'e' ==
-
-To state that noun change has "elusive e", supply full and valid genitive.
-    
-    Example: _liber,libri_ instead of just _liber,i_ 
-
-If full genitive is not provided, the program will not create proper noun forms.
+Same applies for Ver() class.
