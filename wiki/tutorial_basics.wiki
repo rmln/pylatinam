@@ -5,7 +5,7 @@
 
 === Online version ==
 
-There is an online version of the program that has set up some of the available functions. You can see the [http://www.pylatinam.com/interactive/ Introducion page] or visit [http://www.pylatinam.com/interactive/index.py pyPatinam Interactive page] directly. The site is available in [http://www.pylatinam.com/ English], [http://www.pylatinam.com/naslovna_lat.html Serbian LT (srpski, latinica)] and [http://www.pylatinam.com/naslovna.html Serbian CYR (српски, ћирилица)].
+There is an online version of the program that has set up some of the available functions. You can see the [http://www.pylatinam.com/ Introducion page] or visit [http://www.pylatinam.com/interactive/index.py pyPatinam Interactive page] directly. The site is available in [http://www.pylatinam.com/ English], [http://www.pylatinam.com/naslovna_lat.html Serbian LT (srpski, latinica)] and [http://www.pylatinam.com/naslovna.html Serbian CYR (српски, ћирилица)].
  
 ===Installation===
  
