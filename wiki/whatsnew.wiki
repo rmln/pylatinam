@@ -3,7 +3,7 @@
 
 =What's new=
 
-Changes that will be available in upcoming release can be found [http://pylatinam.proprevod.com/wiki/ here].
+Changes that will be available in upcoming release can be found [http://www.pylatinam.com/wiki/ here].
 
 *0.1.8*
 
@@ -11,7 +11,7 @@ Changes that will be available in upcoming release can be found [http://pylatina
  * Rewritten code in Lex;
  * Added makefiles.py that makes HTML, XML and TXT files with outputs using all items in lexicon files;
  * Minor code improvement;
- * Online version has its own CGI scripts that are not part of this distribution: available on [http://pylatinam.proprevod.com/interactive/ pyLatinam Interactive Pages];
+ * Online version has its own CGI scripts that are not part of this distribution: available on [http://www.pylatinam.com/interactive/ pyLatinam Interactive Pages];
  * Other code improvements;
  * Documentation updated.
 
