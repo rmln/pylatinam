@@ -5,6 +5,16 @@
 
 Changes that will be available in upcoming release can be found [http://www.pylatinam.com/wiki/ here].
 
+*0.1.9*
+
+ * Improved declension of nouns.
+ * Added new conjugations.
+ * Added WORDS by William Whitaker; for now verbs and nouns only. Definitions are distributed with the code.
+ * Removed local web server - no point losing time and updating code when http://www.pyLatinam.com is launched.
+ * Removed batch derivation within console.
+ * Broken code: adjectives and pronouns. It will be updated in next release, when lexicon module will hopefully be sorted out.
+
+
 *0.1.8*
 
  * Improved declension of nouns;
