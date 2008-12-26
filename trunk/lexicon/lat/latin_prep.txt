@@ -1,0 +1,17 @@
+a,5
+ad,3
+adversus,3
+ante,3
+contra,3
+cum,5
+erga,3
+finitimus,2
+foo
+in,3,5
+iuxta,3
+ob,3
+prae,5
+praeter,3
+prope,3
+propter,3
+sine,5

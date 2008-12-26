@@ -1,0 +1,12 @@
+puella,djevojka
+discipula,ucenica
+tabella,tabla
+tabula picta,slika
+magistra,uciteljica
+coma,cesalj
+vitta,vrpca
+lupus,vuk
+dama,srna,antilopa
+dolor,bol
+magistra,uèiteljica
+magistra,uciteljica
