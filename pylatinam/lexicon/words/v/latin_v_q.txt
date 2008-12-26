@@ -1,0 +1,16 @@
+quadro, quadrare, 1, quadravi, quadratus
+quadruplico, quadruplicare, 1, quadruplicavi, quadruplicatus
+quadruplor, quadruplari, 1, quadrupatus sum
+quaerito, quaeritare, 1, quaeritavi, quaeritatus
+quaero, quaerere, 3, quaesivi, quaesitus
+quaeso, quaesere, 3, -, -
+qualifico, qualificare, 1, qualificavi, qualificatus
+quasso, quassare, 1, quassavi, quassatus
+quatefacio, quatefacere, 3, quatefeci, quatefactus
+quatio, quatere, 3, -, quassus
+q,u,e,o,,, ,q,u,i,r,e,,, ,q,u,i,v,i,(,i,i,),,, ,q,u,i,t,u,s
+queritor, queritari, 1, -
+queror, queri, 3, questus sum
+quiesco, quiescere, 3, quievi, quietus
+quinquiplico, quinquiplicare, 1, quinquiplicavi, quinquiplicatus
+quiritor, quiritari, 1, -
