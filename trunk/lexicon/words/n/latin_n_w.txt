@@ -1,6 +1,0 @@
-wadiator,wadiatoris,m
-warantia,warantiae,f
-warantizatio,warantizationis,f
-warantus,waranti,m
-warra,warrae,f
-werra,werrae,f
