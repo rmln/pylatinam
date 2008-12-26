@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<word>
+	<nom>
+		<entry>lupus,i,m</entry>
+		<stem>lup</stem>
+		<suf>us, i, o, um, e, o, i, orum, is, os, i, is</suf>
+		<translate>wolf</translate>
+		<type>dec002a</type>
+		<casii>
+			<nom_s>lupus</nom_s>
+			<gen_s>lupi</gen_s>
+			<dat_s>lupo</dat_s>
+			<acc_s>lupum</acc_s>
+			<voc_s>lupe</voc_s>
+			<abl_s>lupo</abl_s>
+			<nom_p>lupi</nom_p>
+			<gen_p>luporum</gen_p>
+			<dat_p>lupis</dat_p>
+			<acc_p>lupos</acc_p>
+			<voc_p>lupi</voc_p>
+			<abl_p>lupis</abl_p>
+		</casii>
+	</nom>
+</word>
