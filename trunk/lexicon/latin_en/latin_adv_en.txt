@@ -1,6 +1,0 @@
-verum,indeed
-sine,without
-verum,in fact
-inferius,below
-sicut,so is as
-superius,above
