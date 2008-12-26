@@ -1,0 +1,19 @@
+in,in,on,against,to
+cum,with
+a,from
+ab,syn=a
+abs,syn=a
+contra,against,to
+ad,to,on,for
+iuxta,next to,by
+ob,because of,for
+propter,because of,for
+prope,close to,next to,by
+ante,
+praeter,except,save
+prae,to,in formt of
+erga,to
+finitimus,adjacent,adjoining
+adversus,against
+sine,without
+
