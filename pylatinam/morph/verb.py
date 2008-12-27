@@ -6,18 +6,18 @@ Verbs
 About
 -----
 
-This module deals with Latin conjugation (inflexion of the verbs). The
+This module performs Latin conjugation (inflexion of the verbs). The
 idea is that user/program passes to the module verb forms and, if 
-all functions well the module will return Latin tenses, moods, asp
-ects and participles.
+all functions well the module will return Latin tenses, moods, aspects 
+and participles.
 
 Class and functions
 -------------------
 
 The module contains several funcions and a single class. This class is
-called Ver() and it is a wrapper around numerous functions. The
-functions are not methods of the class since once functions are ca-
-lled, the is no need for them any longer - outputs are attributes of
+called Ver() and it is the wrapper for numerous functions. The
+functions are not methods of the class because, once functions are called,
+there is no need for them any longer - outputs are attributes of
 the class Ver(). If needed, functions can be wrapped and used outside
 class calls.
 
@@ -31,12 +31,19 @@ passes inside the appropriate functions.
 Keys
 ----
 
-Each verb inflexion has a unique key, and these are stored in vkyes dict-
+Each verb inflexion has the unique keys, which are stored in vkyes dict-
 ionary. You can see it by reading __doc__ of conjugation() or run:
 
 >>> print tags()
 
 to get a table.
+
+Key notation
+------------
+
+Each tense key is written in the format "mood/inf_aspect_tense"
+with followng exception: "gev", "ged" and "supn".
+
 
 Examples
 --------
@@ -58,13 +65,6 @@ This means that make_presentBase MUST
 be written to support these verbs and
 all inflexions that use present base must
 be updated.
-
-* changelog
-
-+ present for 4
-+ present base for -io, -uo
-- present for 3, 1
-
 
 """
 
@@ -176,7 +176,7 @@ def conjugation(conj_id, present_base, perfect_base, present_ending, participle_
     
     Conjugation dictionary created in this function is the
     attribute Ver().tense. Each tense has unique key in
-    dictionary.
+    the dictionary.
 
     In order to make temporal inflexions, this function does
     the following:
@@ -191,44 +191,42 @@ def conjugation(conj_id, present_base, perfect_base, present_ending, participle_
 
     ID, tense and participle::
     
-        iplperp   	 - Indicative imperfect passive
-        ind_p_fu  	 - Indicative Passive Future
-        sub_a_pl  	 - Subjunctive Active Pluperfect
-        sub_a_pe  	 - Subjunctive Active Perfect
-        imp_p_fu  	 - Imperative Passive Future
-        inf_a_pr  	 - The present active infinitive
-        iperp     	 - Indicative perfect passive
-        inf_a_pe  	 - The perfect active infinitive
-        par_a_fu  	 - The future active participle
-        sub_a_pr  	 - Subjunctive Active Present
-        imp_a_fu  	 - Imperative Active Future
-        ind_a_pr  	 - Indicative Active Present
-        ind_p_im  	 - Indicative Passive Imperfect
-        ind_p_pl  	 - Indicative Passive Pluperfect
-        ind_a_pe  	 - Indicative Active Perfect
-        inf_p_fu  	 - The future passive infinitive
-        ind_a_pl  	 - Indicative Active Pluperfect
-        sum_p_im  	 - Subjunctive Passive Imperfect
-        imp_p_pr  	 - Imperative Passive Present
-        gev       	 - The gerundive
-        inf_a_fu  	 - The future active infinitive
-        par_a_pr  	 - The present active participle
-        imp_a_pr  	 - Imperative Active Present
-        ind_p_pr  	 - Indicative Passive Present
-        ged       	 - The gerund
-        ind_p_pe  	 - Indicative Passive Perfect
-        ind_a_im  	 - Indicative Active Imperfect
-        sub_p_pr  	 - Subjunctive Passive Present
-        par_p_pr  	 - The perfect passive participle
-        ind_a_fu  	 - Indicative Active Future
-        ind_a_fp  	 - Indicative Active Future Perfect
-        inf_p_pe  	 - The perfect passive infinitive
-        sub_a_im  	 - Subjunctive Active Imperfect
-        ind_p_fp  	 - Indicative Passive Future Perfect
-        supn      	 - The supine
-        sub_p_pe  	 - Subjunctive Passive Perfect
-        inf_p_pr  	 - The present passive infinitive
-        sub_p_pl  	 - Subjunctive Passive Pluperfect
+    sub_a_pl  	 - Subjunctive Active Pluperfect
+    ind_p_fu  	 - Indicative Passive Future
+    ind_p_fp  	 - Indicative Passive Future Perfect
+    sub_a_pe  	 - Subjunctive Active Perfect
+    imp_p_fu  	 - Imperative Passive Future
+    inf_a_pr  	 - The present active infinitive
+    inf_a_pe  	 - The perfect active infinitive
+    par_a_fu  	 - The future active participle
+    sub_a_pr  	 - Subjunctive Active Present
+    imp_a_fu  	 - Imperative Active Future
+    ind_p_pe  	 - Indicative Passive Perfect
+    ind_p_im  	 - Indicative Passive Imperfect
+    ind_p_pl  	 - Indicative Passive Pluperfect
+    ind_a_pe  	 - Indicative Active Perfect
+    inf_p_fu  	 - The future passive infinitive
+    ind_a_pl  	 - Indicative Active Pluperfect
+    imp_p_pr  	 - Imperative Passive Present
+    gev       	 - The gerundive
+    inf_a_fu  	 - The future active infinitive
+    par_a_pr  	 - The present active participle
+    imp_a_pr  	 - Imperative Active Present
+    ind_p_pr  	 - Indicative Passive Present
+    ged       	 - The gerund
+    ind_a_pr  	 - Indicative Active Present
+    ind_a_im  	 - Indicative Active Imperfect
+    sub_p_pr  	 - Subjunctive Passive Present
+    par_p_pr  	 - The perfect passive participle
+    ind_a_fu  	 - Indicative Active Future
+    ind_a_fp  	 - Indicative Active Future Perfect
+    inf_p_pe  	 - The perfect passive infinitive
+    sub_a_im  	 - Subjunctive Active Imperfect
+    sub_p_im  	 - Subjunctive Passive Imperfect
+    supn      	 - The supine
+    sub_p_pe  	 - Subjunctive Passive Perfect
+    inf_p_pr  	 - The present passive infinitive
+    sub_p_pl  	 - Subjunctive Passive Pluperfect
 
     Example:
 
@@ -237,6 +235,8 @@ def conjugation(conj_id, present_base, perfect_base, present_ending, participle_
     will list present forms of verb "compete".
 
     """
+	
+	#TODO: Rewrite the following with attribute calls:
     
     tense = {}
     #Tenses, aspects and moods in Latin:
@@ -655,7 +655,7 @@ def conj_sub_p_im(infinitive):
     return cv
 
 # Subjunctive Active Perfect
-# Great page for subjunctive:
+# Great page for the subjunctive:
 #   http://www.slu.edu/colleges/AS/languages/classical/latin/tchmat/grammar/whprax/w-sbjctvs.html
 
 def conj_sub_a_pe(perfect_stem):
@@ -668,7 +668,6 @@ def conj_sub_a_pe(perfect_stem):
     return cv
 
 # Subjunctive Active Pluperfect
-
 
 def conj_sub_a_pl(perfect_stem):
     """Subjunctive Passive Perfect"""
