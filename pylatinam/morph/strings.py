@@ -1,8 +1,7 @@
 """Strings (affixes etc.) and helpers
 
 This module contains various strings, some of them organized into 
-classes. The strings are used for making Latin words and various 
-analysis.
+classes. The strings are used for making Latin words and analysis.
 
 TODO: VerStr should have same/similar names as in vkeys dictionary.
 
@@ -91,27 +90,8 @@ CASUS_CLASS = "noms", "gens", "dats", "accs", \
 
 LANG = {'en':"English", 'sr':"Serbian", 'lt':"Latin"}
 
-# This is obsolete and stays here for refactoring reasons.
-#
-### Strings for verbs -------------------------------------------------
-##
-##tkeys =  {'ipra':'Indicative present active', \
-##         'iima':'Indicative imperfect active', \
-##         'futa1':'Future active I', \
-##         'iper':'Indicative perfect active', \
-##         'iplu':'Indicative pluperfect active', \
-##         'futa2':'Indicative future I', \
-##         'imp1':'Indicative imperative I', \
-##         'imp2':'Indicative imperative II or Future imperative',\
-##         'ipp':'Indicative present passive',\
-##         'iimperp':'Indicative imperfect passive',\
-##         'futp1': 'Future passive I', \
-##         'iperp': 'Indicative perfect passive',\
-##         'iplperp': 'Indicative imperfect passive' }
-##
-##pkeys = {'parpp': 'Participle perfect passive'}
-
 # Strings for verbs, version 2 -------------------------------------
+
 vkeys = {'ind_a_pr':'Indicative Active Present', \
 'ind_p_pr':'Indicative Passive Present', \
 'sub_a_pr':'Subjunctive Active Present', \
@@ -148,7 +128,6 @@ vkeys = {'ind_a_pr':'Indicative Active Present', \
 'supn':'The supine', \
 'ged':'The gerund', \
 'gev':'The gerundive'}
-
 
 # -------------------------------------------------------------------
 
