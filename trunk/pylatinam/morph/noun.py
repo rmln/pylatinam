@@ -51,7 +51,7 @@ TODO: blending gen & nom when genitive is more than suffix.
 __author__= "mlinar"
 __url__ = "http://www.pylatinam.com/"
 __mail__ = "cheesepy [a] gmail.com"
-__version__="0.2.3.5"
+__version__="0.2.3.5.1"
 
 
 from strings import NomStr, AdjStr, CASUS_SHORT
@@ -66,10 +66,11 @@ from pylatinam.pylatexcept import \
 
 from pylatinam.lexicon.lexicon import LexContainer
 from morphout import Show
+import irreg 
 
-# Until the code that makes base for the
+# Until the code that makes base for
 # some words is improved, let us treat
-# problematic nouns as exceprions:
+# problematic nouns as exceptions:
 hack_nouns = {"mos":"mor"}
 
 Suf = NomStr()
@@ -92,11 +93,27 @@ class Nom:
         self.translate = container.translate
         self.nolex = nolex
         ##
-        declension = dec(self.entry, pos)   #runs through the functions and returns:
-        self.casii = declension[0]          #cases of the nominal
-        self.type  = declension[1]          #unique id of declension
-        self.suf   = declension[2]          #suffixes used
-        self.stem  = declension[3]          #stem
+        exception = self.is_exception(self.entry)
+        if not exception:
+            declension = dec(self.entry, pos)   #runs through the functions and returns:
+            self.casii = declension[0]          #cases of the nominal
+            self.type  = declension[1]          #unique id of declension
+            self.suf   = declension[2]          #suffixes used
+            self.stem  = declension[3]          #stem
+        else:
+            self.casii = exception[0]
+            self.type  = exception[1]
+            self.suf   = exception[2]
+            self.stem  = exception[3]
+            
+
+    def is_exception(self, entry):
+        "check if a noun is an exception"
+        entry = ','.join(entry)
+        if entry in irreg.irreg_nom.keys():
+            return irreg.irreg_nom[entry]
+        else:
+            return False
 
     def show(self, detail=None):
         """Print out the cases.
@@ -452,7 +469,10 @@ def is_fullgen(nom, gen, n=2):
     if nom[:n] == gen[:n]:
         return True
     else:
-        return False
+        if gen in ('oris'):
+            return True
+        else:
+            return False
     
 
 def fdec(word):
@@ -467,11 +487,14 @@ def fdec(word):
     (('', 'is', 'i', '', '', 'e', 'a', 'um', 'ibus', 'a', 'a', 'ibus'),
     'dec003b')
     """
+    nominative = word[0]
+    genitive = word[1]
+    gender = word[2]
     # Isolated leters form word[].
     # This is needed for further checking.
-    lt3 = word[0][len(word[0])-3:]
-    lt2 = word[0][len(word[0])-2:]
-    lt1 = word[0][len(word[0])-1:]
+    lt3 = nominative[len(word[0])-3:]
+    lt2 = nominative[len(word[0])-2:]
+    lt1 = nominative[len(word[0])-1:]
     # Joined boolean queries. The aim is to
     # conclude to which declension noun
     # belongs; this is done in "if" block
@@ -482,17 +505,13 @@ def fdec(word):
                   or lt2 == "as") or  lt1 == "o"
     # 2 is for consonant base neutrum, III dec. (p. 50)
     is_third_2 = (lt3 == "men" or lt2 == "us" or lt2 == "ur" \
-                  or lt1 == "t")
+                  or lt1 == "t" or genitive.endswith('oris'))
     is_third_3 = (lt2=="is" or lt2=="es" or lt2=="er" or lt1=="s")
     is_third_4 = (lt2 == "al" or lt2 == "ar" or lt1 == "e")
     
     # Find noun's declension based on following data:
     # nominative, nominative ending, genitive ending
     # and gender.
-
-    nominative = word[0]
-    genitive = word[1]
-    gender = word[2]
 
     if nominative == "":
         raise WordListFormatError
