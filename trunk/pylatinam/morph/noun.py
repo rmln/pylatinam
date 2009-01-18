@@ -4,7 +4,7 @@
 Nominals
 ========
 
-This file contains classes and functions that deal with declensions
+This file contains classes and functions for declensions
 of nominals, primarily nouns.
 
 Nom() - Main nominal class
@@ -13,7 +13,7 @@ Nom() - Main nominal class
 This class creates word-methods and attributes for given nominal. In practice
 this means that this module will:
 
- - Create six cases on Latin nominal. The order of the cases is: nominative, 
+ - Create six cases of Latin nominal. The order of the cases is: nominative, 
  genitive, dative, accusative, vocative and ablative).
 
 In order to do the above, module must process nominative, genitive and gender
@@ -37,7 +37,7 @@ provide nominal as string, for example:
 >>> n = Nom("puella,ae,f", nolex=True)
 
 In order to force Nom() to process the noun without looking it up,nolex=True 
-argument should be used. Avoid this by calling Nomf(), which is a simple bypass
+argument should be used. Shorten the call by Nomf(), which is a simple bypass
 with the argument already provided:
 
 >>> n = Nomf("puella,ae,f")
@@ -51,7 +51,7 @@ TODO: blending gen & nom when genitive is more than suffix.
 __author__= "mlinar"
 __url__ = "http://www.pylatinam.com/"
 __mail__ = "cheesepy [a] gmail.com"
-__version__="0.2.3.5.1"
+__version__="0.2.3.5.2"
 
 
 from strings import NomStr, AdjStr, CASUS_SHORT
@@ -208,7 +208,7 @@ def irrchg_n(stem, declension, case, nom, genitive, gen=None):
     # Second:
     if declension == Suf.D2:
         #Here is one rare exception when nominative
-        #is not same as vocative, and applies to
+        #is not the same as vocative, and applies to
         #II declension masc. -us,-i.
         #List of exceptions is in noexept_2ndmsc.
         if nom in noexept_2ndmsc and case == 4:
@@ -386,6 +386,10 @@ def blend(nom, gen, gd):
     Blends nominativus and genitivus (dictionary entries) to get genitive
     form. Ie: palus,udis returns paludis.
     """
+    # First, check if full genitive is already present:
+    if is_fullgen(nom, gen):
+        return gen
+    
     # These are different nominative and genitive
     # endings and rules for making stem to which
     # derivative endings (strings in Dx) will be added
