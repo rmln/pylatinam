@@ -5,4 +5,4 @@
 
 __author__= "mlinar"
 __mail__ = "cheesepy [a] gmail.com"
-__url__ = 'http://www.pylatinam.com/'
+__url__ = 'http://latin.languagebits.com/'

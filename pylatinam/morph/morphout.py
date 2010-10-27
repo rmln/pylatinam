@@ -12,7 +12,7 @@ TODO
 """
 
 __author__= "mlinar"
-__url__ = "http://www.pylatinam.com/"
+__url__ = "http://latin.languagebits.com/"
 __mail__ = "cheesepy [a] gmail.com"
 __version__ = "0.1"
 
