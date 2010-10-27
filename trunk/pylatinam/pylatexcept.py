@@ -6,7 +6,7 @@ Exceplion classes for pyLatinam.
 
 __version__="0.2.6"
 __author__= "mlinar"
-__url__ = "http://www.pylatinam.com/"
+__url__ = "http://latin.languagebits.com/"
 
 class Error(Exception):
     """Base class for exceptions in this module."""

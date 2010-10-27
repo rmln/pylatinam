@@ -63,10 +63,10 @@ details.
 Online WEB version
 ------------------
 
-Point your browser to http://www.pylatinam.com/ for an introduction or 
+Point your browser to http://latin.languagebits.com/ for an introduction or 
 visit the interactive pages directly:
 
-U{http://www.pylatinam.com/interactive/}
+U{http://latin.languagebits.com/interactive/}
 
 Web version 'evolved' from small debugging tool. It is suitable for
 users who want simple and functional overview of pyLatinam.
@@ -74,7 +74,7 @@ users who want simple and functional overview of pyLatinam.
 API Documentation
 -----------------
 
-Available on U{http://www.pylatinam.com/api/}
+Available on U{http://latin.languagebits.com/api/}
 
 The Code & Technical Info
 -------------------------
@@ -105,7 +105,7 @@ non-commercial use. It is published under New BSD License.
 """
 
 __author__= "mlinar"
-__url__ = 'http://www.pylatinam.com/'
+__url__ = 'http://latin.languagebits.com/'
 __mail__ = "cheesepy [a] gmail.com"
 __version__="0.1.9"
 
